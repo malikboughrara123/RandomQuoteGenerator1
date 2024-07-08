@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /></head> -->
+<body>
+    <div id="particles-js">
+        <header>
+            <button id="admin">
+                <a href="login.html">Admin</a>
+                
+            </button>
+            <h2><a href="welcome.html">Random Quote Generator</a></h2>
+            
+<button class="noselect">
+    
+        <a href="addquote.html"><span class="text">Add Quote</span></a>
+        
+    
+
+    <span class="Iicon">
+        <i class="fa-solid fa-plus" onclick="gotoaddquote()"></i>
+    </span>
+</button>
+        </header>
+        <div class="generator">
+            <div class="globalecontainer">
+                <div class="copybutton">
+                    <button class="copy" data-state="copy" data-text="Copy to clipboard">
+                        <span data-text-end="Copied!" data-text-initial="Copy to clipboard" class="tooltip"></span>
+                        <span>
+                          <i class="fa-regular fa-clipboard clipboard"></i>
+                          <i class="fa-solid fa-check checkmark"></i>
+                        </span>
+                      </button>
+                      
+                      
+                </div>
+               <div class="quoteimage">
+                <div class="container">
+                   
+                    
+                    <!-- <button class="copy">
+                       
+                    </button>
+                     -->
+
+                    <p id='insertQuoteHere'></p>
+                    <p id="insertAuthorHere"></p>
+                </div>
+                <div class="imgcontainer">
+                    <img src="sun.png" alt="Image 1">
+
+                    <img src="marcus.png" alt="Image 2">
+                    <img src="herman.png" alt="Image 3">
+                    <img src="kafka.png" alt="Image 4">
+                    <img src="dostoevsky.png" alt="Image 5">         
+                </div>
+               </div>
+                
+            </div>
+          
+           
+            <div class="functions">
+                <button onclick='getQuote()' id="getquote">
+                    <span class="text">
+                    Generate Quote
+                </span> 
+            </button>
+        
+                <!-- <button onclick="saveQuote()">Save quote</button>
+            
+                <button onclick="openLibrary()">
+                    <a href="library.html" target="_blank">View Library</a>
+                    </button>
+    
+                    <button id="trash" onclick="openTrash()">
+                        <a href="trash.html" target="_blank">Trash Bin</a>
+                    </button> -->
+            </div>
+            <div class="share">
+                <div class="share1">
+                    <!-- <button id="btnCloud1">
+                        <i class="fab fa-twitter" id="icon" 
+                        onclick="shareOnTwitter()"></i>
+                     </button> --> <!--<div class="btn_wrap">
+        <span class="spanshare">Share</span>
+        <div class="container3">
+            <i class="fab fa-facebook-f" class="icontainer3" id="facebook"></i>
+            <i class="fab fa-twitter" class="icontainer3" id="twitter"  onclick="shareOnTwitter()"></i>
+            <i class="fab fa-instagram" class="icontainer3" id="instagram"></i>
+            <i class="fab fa-github" class="icontainer3" id="github"></i>
+        </div>
+               -->
+    <div id="wrapper">
+        <input type="checkbox" class="checkbox" id="share" checked />
+        <label for="share" class="label entypo-export"><i class="fa fa-share" aria-hidden="true"></i></label>
+        <div class="social">
+          <ul>
+            <li class="entypo-twitter"><i class="fab fa-twitter" aria-hidden="true"></i></li>
+            <!-- <li class="entypo-youtube"><i class="fa fa-youtube" aria-hidden="true"></i></li> -->
+            <li class="entypo-facebook"><i class="fab fa-facebook" aria-hidden="true"></i></li>    
+            <!-- <li class="entypo-gplus"><i class="fa fa-google-plus" aria-hidden="true"></i></li> -->
+            <li class="entypo-instagram"><i class="fab fa-instagram" aria-hidden="true"></i></li>
+            <!-- <li class="entypo-dropbox"><i class="fa fa-dropbox" aria-hidden="true"></i></li> -->
+            <!-- <li class="entypo-github"><i class="fa fa-github" aria-hidden="true"></i></li>       -->
+          </ul>
+        </div>
+    </div>
+                <div class="functionality">
+
+                    <button id="btnCloud2">
+                        <i class="fa-solid fa-microphone icon" ></i>
+                   </button>
+
+                  <button id="btnCloud3">
+                   <i class="fa-solid fa-book icon" onclick="openLibrary()"></i>
+                  </button>
+
+                   <button id="btnCloud4">
+                       <i class="fa-solid fa-bookmark" id="saveicon" ></i>
+                   </button>
+
+                   <button id="btnCloud5">
+                       <i class="fa-solid fa-trash" id="icontrash" onclick="openTrash()"></i>
+                   </button>
+
+                </div>
+                    
+                    
+                </div>
+                    <div class="share2">
+                        <!-- <i class="fa-solid fa-heart" onclick="favourite()"></i> -->
+                        <button class="Btn">
+                            <span class="leftContainer" id="fav">
+                                <i class="fa-solid fa-heart" onclick="favourite()"></i>
+                                <span class="like">Like</span>
+                            </span>
+                            <span class="likeCount">
+                              2,050
+                            </span>
+                          </button>
+                    </div>
+                    
+                  <audio id="quoteAudio" style="display: none;"></audio>
+            </div>
+    
+        </div>
+        <div id="libraryData" style="display: none;"></div>
+    </div>
+   
+
+
+    <!-- <div class="trash-bin" id="trashBin">
+
+
+
+    <ul id="trashList">
+      <li id="emptyTrashMessage" style="display: none;">The trash is empty.</li>
+    </ul>
+
+    <button onclick="restoreFromTrash()">Restore All</button>
+    <button onclick="clearTrash()">Clear Trash</button>
+
+  </div> -->
+  <script src=
+  "particles.js-master/particles.js">
+</script>
+<script src=
+  "particles.js-master/demo/js/app.js">
+</script>
+    
+    <script src="script.js"></script> 
+
+</body>

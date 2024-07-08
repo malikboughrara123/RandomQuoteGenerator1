@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: Montserrat, sans-serif;
+  height: 100vh;
+}
+header{
+    background-color: #25282d;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    /* display: flex;
+    flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+h2{
+    text-align: center;
+}
+#particles-js {
+    background: black;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+width: 100%;
+height: 100%;
+align-items: center;
+justify-content: center;
+}
+.container{
+    border: 1px solid #ddd;
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: rgba(37, 40, 45, 0.7); /* Semi-transparent background */
+    position: relative;
+    opacity: 70%; 
+}
+.particles-js-canvas-el{
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.text{
+    display: flex;
+    flex-direction: row;
+}
+.email, .password{
+    width: 100%;
+}
+ .email, .password{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+
+}/*
+input[type="email"], input[type="password"] {
+    background-color: rgba(37, 40, 45, 0.7);;
+    color: white;
+    padding: 14px;
+    width: 60%;
+    border: none;
+}
+input[type="email"]:focus, input[type="password"]:focus{
+    border: none;
+} */
+.inputbox {
+    /* margin-top: 50px; */
+    margin-left: 10px;
+    /* margin-bottom: 20px; */
+    position: relative;
+    width: 70%;
+    margin-right: 50px;
+  }
+  
+  .inputbox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #ddd;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+  }
+  
+  .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: white;
+    letter-spacing: 00.05em;
+    transition: 0.5s;
+    pointer-events: none;
+  }
+  
+  .inputbox input:valid ~span,
+  .inputbox input:focus ~span {
+    color:#ddd;
+    transform: translateX(-10px) translateY(-39px);
+    font-size: 0,75em;
+    font-weight: bold;
+  }
+  
+  .inputbox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(37, 40, 45, 1);
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+  }
+  
+  .inputbox input:valid ~i,
+  .inputbox input:focus ~i {
+    height: 44px;
+  }
+.text{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+input[type="checkbox"]{
+    margin-top: 3px;
+    position: absolute;
+    left: -8%;
+    top: -4%;
+}
+label{
+    position: absolute;
+    left: 15%;
+    color: white;
+}
+input[type="checkbox"]{
+    margin-left: 20%;
+}
+p{
+    position: absolute;
+    top: -4%;
+    left: 70%;
+}
+.fa-regular.fa-user{
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: rgba(37, 40, 45, 0.7); 
+    cursor: pointer;    
+}
+.fa-solid.fa-lock{
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    background-color: rgba(37, 40, 45, 0.7); 
+    cursor: pointer; 
+    border: 1px solid #ddd;
+}
+.fa-solid.fa-user{
+    border: 1px solid #ddd;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    background-color: rgba(37, 40, 45, 0.7); 
+    cursor: pointer; 
+}
+.btn1{
+    background: blue;
+    color: white;
+    font-weight: bold;
+    padding: 15px 30px;
+   border-radius: 4%;
+   border:none ;
+   cursor: pointer;
+}
+#admin{
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    cursor: pointer;
+    border: none;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+#addquote{
+    background-color: blue;
+    color: white;
+    padding: 10px 25px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: none;
+}
+.button {
+    margin-top: 35px;
+    --color: blue;
+    padding: 0.8em 1.7em;
+    background-color: #ddd;
+    font-weight: bold;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    /* font-weight: 400; */
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+   
+   .button::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   .button::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .button:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .button:hover {
+    color: white;
+   }
+   
+   .button:active {
+    filter: brightness(.8);
+   }
+   

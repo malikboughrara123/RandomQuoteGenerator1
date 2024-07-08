@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Quote</title>
+    <link rel="stylesheet" href="addquote.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+
+</head>
+<body>
+    <div id="particles-js">
+        <header id="maincontainer">
+            <h2>
+                <a href="welcome.html">
+                    Random Quote Generator
+
+                </a>
+             </h2>
+            <!-- <button id="admin">
+                <a href="login.html">Admin</a>
+                
+            </button> -->
+           
+            <!-- <button id="addquote">
+                Add Quote
+            </button> -->
+        </header>
+        
+        <!-- <div class="quote">
+            <h2>
+                <a href="addquote.html">
+                    Add A Quote
+                </a>
+            </h2>
+            
+        </div> -->
+       
+        <div class="container1" >
+            <!-- <input type="" placeholder="Add Quote Here" id="quoteholder"> -->
+            <div class="textareadiv">
+                <p><label for="quoteadding">Write Your Quote Here:</label></p>
+                <textarea id="quoteadding" name="quoteadding" rows="5" cols="50"></textarea>
+            </div>
+            <!-- <input type="text" required="required">
+
+                <span>Write Your Quote Here:</span>
+<i></i> -->
+            <div class="inputbox">
+                <input type="text" required="required">
+                <span>Add Author</span>
+                <i></i>
+            </div>
+            <button id="savequote">Save Quote</button>
+        </div>
+        <!-- <button id="recentlyAddedButton" class="noselect">
+            <span class="text">Recently added Quotes</span>
+        </button> -->
+        <button id="backButton" class="scroll-to-top-button" title="Scroll to Top">
+            <i class="fas fa-arrow-up" id="arrow"></i>
+        </button>
+        
+        
+      
+        <div class="container2" id="recentlyAddedContainer">
+          
+            
+            <div class="recentlyadded">
+                   
+                
+                <!-- <i class="fa-solid fa-rotate-left"></i> -->
+                <div class="text">
+                    <span id="smalltext">Recently added Quotes</span>
+                </div>
+                
+            </div>
+                <div class="addedquotescontainer">
+                    <div id="quotes"></div>
+                </div>
+                
+        </div>
+</div>
+    <!-- <div id="particles-js">
+
+    </div> -->
+    <script src=
+    "particles.js-master/particles.js">
+  </script>
+  <script src=
+    "particles.js-master/demo/js/app.js">
+  </script>
+    <script src="addquote.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    background-color: #5b5a62;
+    font-family: Montserrat, sans-serif;
+}
+header{
+    background-color: #25282d;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    /* display: flex;
+    flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+h2{
+    text-align: center;
+}
+.container{
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    /* height: 650px; */
+    max-height: 500px;
+    background-color: rgba(37, 40, 45, 0.7); /* Semi-transparent background */
+    overflow-x: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 30px;
+}
+#deletedQuotesList{
+    border: 1px solid #ddd;
+      
+    box-shadow: 0 0 2px black;
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    background-color: transparent;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin: 10px 15px;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    max-height: 300px;
+
+}
+
+button{
+    background:transparent ;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding:8px  16px   9px    16px;
+    margin : 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.6;
+}
+.del{
+    background:red ;
+    border: none;
+    border-radius: 4px;
+    padding:8px  16px   9px    16px;
+    margin : 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.quote {
+    margin: 10px 15px;
+    font-size: 16px;
+    width: 600px;
+    height: auto;
+    /* background-color: red; */
+    max-height: 500px; 
+    line-height: 1.4;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+  .quoteContainer{
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    /* background-color: blue; */
+    max-width: 800px;
+   align-items: center;
+   justify-content: end;
+   padding: 10px;
+}
+.quoteContainer:first-child{
+    margin-top: 40px;
+}
+.quoteContainer:last-child{
+    margin-bottom:30px;
+} 
+.quoteContainer:last-child {
+    border-bottom: 1px solid #ddd;
+}
+span:hover{
+    opacity: 0.6;
+}
+.trashcontainer{
+    width: auto;
+    max-width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color:purple ; */
+    border: 1px solid #ddd;
+}
+.restore{
+    background:blue ;
+    border: none;
+    border-radius: 4px;
+    padding:8px  16px   9px    16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.particles-js-canvas-el{
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.empty-message {
+    font-style: bold;
+    font-size: 16px;
+    color: #777;
+margin-top: 150px;  }
+  i{
+    color: white;
+    padding: 10px 25px;
+    cursor: pointer;
+    border: none;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+.fa-trash{
+    background-color: red;
+}
+i:hover{
+    opacity: 0.6;
+
+}
+.fa-rotate-left{
+    background-color: blue;
+}
+#particles-js {
+    background: black;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#admin{
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    cursor: pointer;
+    border: none;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+#addquote{
+    background-color: blue;
+    color: white;
+    padding: 10px 25px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: none;
+}

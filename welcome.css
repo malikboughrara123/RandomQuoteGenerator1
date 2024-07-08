@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: Montserrat, sans-serif;
+  height: 100vh;
+}
+header{
+    background-color: #25282d;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    color: white;
+}
+p{
+    color: white;
+    border-bottom: 1px solid ;
+}
+
+.particles-js-canvas-el{
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* #admin{
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    cursor: pointer;
+    border: none;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+#addquote{
+    background-color: blue;
+    color: white;
+    padding: 10px 25px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: none;
+} */
+.welcome{
+    display: flex;
+    flex-direction: column;
+    /* background-color:red; Semi-transparent background */
+    width: 1000px;
+    height: 500px;
+    margin-top: 20px;
+    margin-left: 80px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.welcome1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+    width: auto;
+    position: absolute;
+    top: 30%;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.welcome2{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+
+}
+#welcometext{
+    font-size: 70px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+
+}
+/* #admin{
+    padding: 20px;
+    color: white;
+    background-color: blue;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background-color: rgba(37, 40, 45, 0.7); /* Semi-transparent background 
+    opacity: 70%;
+    width: 350px;} */
+/* #user{
+    border: 1px solid #ddd;
+    width: 70%;
+    padding: 20px;
+    color: white;
+    background-color: rgba(37, 40, 45, 0.7); /* Semi-transparent background 
+    cursor: pointer;
+    opacity: 70%;
+    width: 350px;
+} */
+#admin {
+    position: relative;
+    display: inline-block;
+    padding: 12px 50px;
+    border: none;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    background-color: rgba(37, 40, 45, 0.7);
+    color: #ffffff40;
+    box-shadow: 0 0 0 2px #ffffff20;
+    cursor: pointer;
+    overflow: hidden;
+
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  #admin span:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  #admin span:first-child {
+    position: relative;
+    z-index: 1;
+  }
+  
+  #admin:hover {
+    box-shadow: 0 0 0 5px rgba(37, 40, 45, 0.7);
+    color: rgba(37, 40, 45, 0.7);
+  }
+  
+  #admin:hover span:last-child {
+    width: 100%;
+    height: 150px;
+    opacity: 1;
+  }
+  
+  #admin:hover a {
+    color: #333; /* Change text color to dark when hovering */
+    text-decoration: none; /* Optional: Remove underline when hovering */
+  }
+  #user {
+    margin-left: 400px;
+    position: relative;
+    display: inline-block;
+    padding: 12px 50px;
+    border: none;
+    background-color: rgba(37, 40, 45, 0.7);
+    font-size: 16px;
+    border-radius: 100px;
+    font-weight: 600;
+    color: #ffffff40;
+    box-shadow: 0 0 0 2px #ffffff20;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  #user span:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  #user span:first-child {
+    position: relative;
+    z-index: 1;
+  }
+  
+  #user:hover {
+    box-shadow: 0 0 0 5px rgba(37, 40, 45, 0.7);
+    color: rgba(37, 40, 45, 0.7);
+  }
+  
+  #user:hover span:last-child {
+    width: 100%;
+    height: 150px;
+    opacity: 1;
+  }
+  
+  #user:hover a {
+    color: #333; /* Change text color to dark when hovering */
+    text-decoration: none; /* Optional: Remove underline when hovering */
+  }
+  
